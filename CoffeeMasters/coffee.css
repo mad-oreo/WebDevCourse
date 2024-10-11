@@ -1,0 +1,208 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #efefef;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.header {
+    display: flex;
+    padding: 5px;
+    background-color: #43281c;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    color: #fbf2c0;
+    height: 73px;
+}
+
+.logo {
+    height: 30px;
+    position: relative;
+    display: block;
+}
+
+.page {
+    display: grid;
+    padding: 20px;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+    grid-template-rows: auto;
+    grid-template-areas: 
+    "order pay-info"
+    "summary summary"
+    "confirm confirm";
+}
+
+.item-box {
+   background-color: #fbf2c0;
+   border-radius: 15px;
+   height: 100%;
+}
+
+.title {
+    align-items: left;
+    margin-left: 15px;
+    padding: 10px;
+    font-size: 15px;
+}
+
+.item-list li {
+   align-items: center;
+   list-style: none;
+   display: grid;
+   grid-template-columns: auto 2fr auto;
+   margin-bottom: 10px;
+   border-bottom: 2px solid saddlebrown;
+}
+
+.item-list li:last-child {
+    border-bottom: none; /* Removes the line after the last item */
+}
+
+.item-count {
+    grid-column: 1;
+}
+
+.item-name {
+    grid-column: 2;
+    margin-left: 10px;
+    font-weight: bold;
+    margin-bottom: none;
+}
+
+.item-price {
+    grid-column: 3;
+    font-weight: bold;
+    justify-self: end;
+    padding: 10px;
+    margin-right: 30px;
+}
+
+.item-list p {
+    margin-top: none;
+    grid-column: 2;
+    margin: 2px 0;
+    margin-left: 10px;
+    font-size: 15px;
+}
+
+.name-box {
+    background-color: #fbf2c0;
+    border-radius: 15px;
+    height: 150px;
+}
+
+.name-group {
+    padding: 10px;
+    margin-left: 10px;
+    position: relative;
+    display: inline-block;
+}
+
+.user-input {
+    border-color: #43281c;
+    padding: 10px;
+    border-radius: 20px;
+    background-color: #fbf2c0;
+    width: 700px;
+}
+
+.input-label {
+    background-color: #fbf2c0;
+    color: #43281c;
+    font-size: 11px;
+    position: absolute;
+    left: 40px;
+    top: 0px;
+    padding: 2px;
+
+}
+
+.pay-box {
+    background-color: #fbf2c0;
+    border-radius: 15px;
+    height: 200px;
+}
+
+.pay-box input {
+    padding: 10px;
+    margin-left: 20px;
+    margin-bottom: 15px;
+}
+
+.label-card {
+    background-color: #fbf2c0;
+    color: #43281c;
+    font-size: 11px;
+    position: absolute;
+    left: 830px;
+    top: 317px;
+    padding: 2px;
+}
+
+.label-ccv {
+    background-color: #fbf2c0;
+    color: #43281c;
+    font-size: 11px;
+    position: absolute;
+    left: 830px;
+    top: 373px;
+    padding: 2px;
+}
+
+.summary {
+    display: grid;
+    grid-area: summary;
+    place-items: center;
+}
+
+.summary-box {
+    max-width: 100%;
+    padding: 15px;
+    display: grid;
+    grid-template-columns: auto auto;
+    column-gap: 20px;
+
+}
+
+.summary-row {
+    display: contents;
+}
+
+.summary-label {
+    margin-bottom: 30px;
+    text-align: left;
+    margin-right: 300px;
+}
+
+.summary-amount {
+    text-align: right;
+}
+
+.summary-row-total {
+    display: contents;
+    font-weight: bold;
+    padding: none;
+}
+ 
+.confirm {
+    display: grid;
+    grid-area: confirm;
+    place-items: center;
+}
+
+.place-order-btn {
+    background-color: #deb993;
+    width: 1450px;
+    border-radius: 20px;
+    margin-top: -1000px;
+    height: 40px;
+    border: none;
+    font-size: 15px;
+    padding: none;
+}

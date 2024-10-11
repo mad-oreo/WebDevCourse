@@ -1,0 +1,95 @@
+
+.brand {
+    text-align: center;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.page {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+    "brand-header brand-header brand-header" 
+    "nav-links nav-links nav-links"
+    "story-1 story-2 story-3"
+    "story-4 story-5 story-5";
+    border-bottom: 2px solid black;
+    border-left: 2px solid black;
+    border-right: 2px solid black;
+}
+
+.story {
+    padding: 10px
+}
+
+.story-1 {
+    grid-area: story-1;
+    border-bottom: 2px solid black;
+    border-right: 2px solid black;
+    border-top: 2px solid black;
+}
+
+.story-2 {
+    grid-area: story-2;
+    border-bottom: 2px solid black;
+    border-right: 2px solid black;
+    border-top: 2px solid black;
+}
+
+.story-3 {
+    grid-area: story-3;
+    border-bottom: 2px solid black;
+    border-top: 2px solid black;
+}
+
+.story-4 {
+    grid-area: story-4;
+    border-right: 2px solid black;
+}
+
+.story-5 {
+    grid-area: story-5;
+}
+
+.nav-links {
+    grid-area: nav-links;
+    display: flex;
+    border-top: 2px solid black;
+}
+
+.site-section {
+    display: flex;
+    padding: 20px; 
+    font-size: 20px;
+    width: 110%;
+    
+}
+
+.section-link {
+    font-weight: bold;
+    font-size: larger;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color:dimgrey;
+    text-decoration: none;
+}
+
+.brand-header {
+    grid-area: brand-header;
+    border: none;
+}
+
+.article-title {
+    font-size: 30px;
+    font-style: italic;
+    text-align: center;
+}
+
+.article-img {
+    margin: 0 auto;
+    max-height: 250px;
+    display: block;
+}
+
+.section-link:hover {
+    text-decoration: underline;
+}
