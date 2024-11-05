@@ -1,0 +1,37 @@
+* {
+    background-color: #28282b;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+h1 {
+    margin: 50px;
+    text-align: center;
+    color:beige;
+}
+
+.loading-symbol {
+    display: flex; /* Add this line */
+    justify-content: center; /* Centers horizontally */
+    align-items: center; /* Centers vertically */
+    height: 50px; /* Optional: Set height to fill the viewport */
+    margin-left: 730px;
+    margin-bottom: 20px;
+    animation: spin 1.5s linear infinite;
+}
+
+.letter-box {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    justify-content: center;
+}
+
+.letter-box input {
+    width: 50px;
+    height: 50px;
+    border-color: pink;
+    margin: 5px;
+    color: beige;
+    font-size: 30px;
+    text-align: center;
+}
