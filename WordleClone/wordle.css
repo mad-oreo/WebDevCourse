@@ -34,4 +34,17 @@ h1 {
     color: beige;
     font-size: 30px;
     text-align: center;
+    text-transform: uppercase;
+}
+
+.correct {
+    background-color: #3e8e41;
+}
+
+.incorrect {
+    background-color: grey;
+}
+
+.unmatched {
+    background-color: #c8b653;
 }
